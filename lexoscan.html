@@ -1037,7 +1037,7 @@ async function callGemini(prompt, isImage = false, imageBase64 = null, imageMime
   const apiKey = document.getElementById('apiKey').value.trim();
   if (!apiKey) throw new Error('Please enter your Gemini API key.');
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
   let parts = [];
   if (isImage && imageBase64) {
